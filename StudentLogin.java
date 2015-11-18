@@ -1,9 +1,11 @@
+
+import javax.swing.JOptionPane;
 /*
-*
+* CSC200
 * This project is for student, admin, and staff to login
 * Auhor: Toan Tran
+*
 */
-import javax.swing.JOptionPane;
 public class StudentLogin {
 	 public enum AccountType {Admin, Student, Staff}
 	  public static void main (String[] args){
@@ -30,13 +32,13 @@ public class StudentLogin {
 }        // Account Type 
     	  switch(input) {
     	  case Admin:
-    		 JOptionPane.showMessageDialog(null,"Welcome Admin! You can update and read file.");
+    		 JOptionPane.showMessageDialog(null,"Welcome Admin! You can update and read file."); //output Welcome admin
     		 return;
     	  case Student:
-     		 JOptionPane.showMessageDialog(null,"Welcome Student! You can only read file.");
+     		 JOptionPane.showMessageDialog(null,"Welcome Student! You can only read file.");//output Welcome student
      		 return;
     	  case Staff:
-     		 JOptionPane.showMessageDialog(null,"Welcome Staff! You can update, read, add, delete file.");
+     		 JOptionPane.showMessageDialog(null,"Welcome Staff! You can update, read, add, delete file.");//output welcome staff
      		 return;
          default:
         	 JOptionPane.showMessageDialog(null,"Wrong account type.");
@@ -54,7 +56,7 @@ public class StudentLogin {
     	    }
        }
        while(t<=3);
-       JOptionPane.showMessageDialog(null, "Your account has been locked, Please contact admin for more information. ");
+       JOptionPane.showMessageDialog(null, "Your account has been locked, Please contact admin for more information. ");// acount had been locked. 
 	  
 	 
     	  }
